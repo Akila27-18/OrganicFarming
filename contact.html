@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <title>contact</title>
+    
+</head>
+<body>
+    <script>
+        const toggleButton = document.querySelector('.menu-toggle');
+        const menuLinks = document.querySelector('.menu-links');
+      
+        toggleButton.addEventListener('click', () => {
+          menuLinks.classList.toggle('active');
+        });
+      </script>
+    <section class="hero">
+        <img src="Image/12 (45).png" width="100%">
+    </section>
+    <nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <a href="index.html">Home</a>
+        <a href="#">ABOUT</a>
+        <a href="#" class="inactive-button">Crop guide</a>
+        <a href="#">Contact</a>
+      </nav>
+    
+     
+       
+      <section class = contact>
+        <div class="details">
+          <h2 style="color: darkgreen;">Get in Touch</h2>
+          <h4 style="color: goldenrod;">We are Here to Assist you with any Queries....</h4>
+            <br>
+                <h5 style="color:darkolivegreen; font-weight: bolder; font-size: larger;">Email:</h5>
+                <p style="color:blueviolet; font-weight: bolder; font-size: larger;"><a href="mailto:greenguide@gmail.com">greenguide@gmail.com</a></p>
+             <br>
+           
+                <h5 style="color:darkolivegreen; font-weight: bolder; font-size: larger;">Phone</h5>
+                <p  style="color:blueviolet; font-weight: bolder; font-size: larger;">9874563210</p>
+              <br>
+             
+                <h5 style="color:darkolivegreen; font-weight: bolder; font-size: larger;">Office</h5>
+                <p style="color:darkblue; font-weight: bolder; font-size: larger;">123 Chennai, Tamil Nadu, INDIA</p>
+        </div>
+        <div class="contact-img">
+          <img src="Image/12 (26).png">
+        </div>
+      </section>
+      
+      
+      <!-- Subscription Section -->
+      <section class="subscribe-section">
+        <div class="subscribe-box">
+          <p class="subscribe-text">Keep your Green natural and Fresh</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="@Email">
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </section>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('active');
+        }
+      </script>
+      
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-column">
+          <h3 class="footer-title"><a href="index.html" style="text-decoration: none;color:white;">🌾The Green Guide🌱</a></h3>
+          <p>
+            We focus on building healthy soil, protecting biodiversity, and producing fresh, nutrient-rich food 
+            that’s good for people and the planet. Whether you're here to learn, shop, or connect with like-minded 
+            growers, our goal is to inspire a lifestyle that honors the earth.
+          </p>
+        </div>
+      
+        <div class="footer-column">
+          <h4>CATAGORY</h4>
+          <ul>
+            <li><a href="soilhealth.html">Soil Health</a></li>
+            <li><a href="pestcontrol.html">Pest Control</a></li>
+            <li><a href="chemical.html">Chemical Consequences</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-column">
+          <h4>CONTACT</h4>
+          <ul>
+            <li>Environmentalists</li>
+            <li>Local Farmers</li>
+          </ul>
+        </div>
+      </footer>
+</body>
+</html>

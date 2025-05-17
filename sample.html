@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <title>Soil Health</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+    font-family: 'Raleway', sans-serif;
+  }
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #140503;
+    padding: 1rem 0;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 2rem auto;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    margin: 0 0.5rem;
+    font-weight: bolder;
+    font-size: 25px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #2e1913;
+  }
+
+  .inactive-button {
+    background-color: #b0aaa8;
+    color: white;
+    cursor: not-allowed;
+  }
+
+  
+  .contact {
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 20px 20px 20px;
+    gap: 3rem;
+   border: 4px solid white;
+   line-height: 1.7;
+  }
+  
+  .details {
+    flex: 1;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .details a{
+    text-decoration: none;
+    color: greenyellow;
+  }
+  .contact-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-img img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  .split-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .left-box, .right-box {
+    flex: 1;
+    padding: 40px;
+    color: #fff;
+  }
+  
+  .left-box {
+    background-color: #bcb7b7;
+    color: #fff;
+  }
+  
+  .right-box {
+    background-color: #2f2e2e;
+  }
+  
+  .left-box h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  
+  
+  
+  /* --- Subscription Section --- */
+  .subscribe-section {
+    background-color: #000;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .subscribe-box {
+    display: inline-block;
+    background-color: #111;
+    border-radius: 30px;
+    padding: 20px 30px;
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.05),
+                0 0 40px 10px rgba(255, 255, 0, 0.4),
+                0 0 60px 15px rgba(128, 0, 128, 0.4);
+  }
+  
+  .subscribe-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .subscribe-form input[type="email"] {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  .subscribe-form button {
+    padding: 12px 24px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* --- Footer Section --- */
+  .footer {
+    font-weight: bold;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    gap: 40px;
+    justify-content: space-around;
+  }
+  
+  .footer-column {
+    max-width: 400px;
+  }
+  
+  .footer-title {
+    color:#00ff66;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column h4 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:#00ff66;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+   }
+  
+  .footer-column li {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color:lightblue;
+  }
+  .footer-column p {
+    /* margin-bottom: 8px; */
+    font-size: 20px;
+    color:lightblue;
+  }
+  .footer-column li a{
+    text-decoration: none;
+    color: lightblue;
+  }
+    </style>
+</head>
+<body>
+    <script>
+        const toggleButton = document.querySelector('.menu-toggle');
+        const menuLinks = document.querySelector('.menu-links');
+      
+        toggleButton.addEventListener('click', () => {
+          menuLinks.classList.toggle('active');
+        });
+      </script>
+    <section class="hero">
+        <img src="Image/12 (45).png" width="100%">
+    </section>
+    <nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <a href="index.html">Home</a>
+        <a href="#">ABOUT</a>
+        <a href="#" class="inactive-button">Crop guide</a>
+        <a href="#">Contact</a>
+      </nav>
+    
+     
+       
+      <section class = contact>
+        <div class="details">
+          <h2 style="color: darkgreen;">Get in Touch</h2>
+          <h4 style="color: goldenrod;">We are Here to Assist you with any Queries....</h4>
+            <br>
+                <h5 style="color:darkolivegreen; font-weight: bolder; font-size: larger;">Email:</h5>
+                <p style="color:blueviolet; font-weight: bolder; font-size: larger;"><a href="mailto:greenguide@gmail.com">greenguide@gmail.com</a></p>
+             <br>
+           
+                <h5 style="color:darkolivegreen; font-weight: bolder; font-size: larger;">Phone</h5>
+                <p  style="color:blueviolet; font-weight: bolder; font-size: larger;">9874563210</p>
+              <br>
+             
+                <h5 style="color:darkolivegreen; font-weight: bolder; font-size: larger;">Office</h5>
+                <p style="color:darkblue; font-weight: bolder; font-size: larger;">123 Chennai, Tamil Nadu, INDIA</p>
+        </div>
+        <div class="contact-img">
+          <img src="Image/12 (26).png">
+        </div>
+      </section>
+      
+      
+      <!-- Subscription Section -->
+      <section class="subscribe-section">
+        <div class="subscribe-box">
+          <p class="subscribe-text">Keep your Green natural and Fresh</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="@Email">
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </section>
+      <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('active');
+        }
+      </script>
+      
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-column">
+          <h3 class="footer-title"><a href="index.html" style="text-decoration: none;color:white;">🌾The Green Guide🌱</a></h3>
+          <p>
+            We focus on building healthy soil, protecting biodiversity, and producing fresh, nutrient-rich food 
+            that’s good for people and the planet. Whether you're here to learn, shop, or connect with like-minded 
+            growers, our goal is to inspire a lifestyle that honors the earth.
+          </p>
+        </div>
+      
+        <div class="footer-column">
+          <h4>CATAGORY</h4>
+          <ul>
+            <li><a href="soilhealth.html">Soil Health</a></li>
+            <li><a href="pestcontrol.html">Pest Control</a></li>
+            <li><a href="chemical.html">Chemical Consequences</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-column">
+          <h4>CONTACT</h4>
+          <ul>
+            <li>Environmentalists</li>
+            <li>Local Farmers</li>
+          </ul>
+        </div>
+      </footer>
+</body>
+</html>

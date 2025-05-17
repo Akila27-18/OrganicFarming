@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #000;
+    font-family: 'Raleway', sans-serif;
+  }
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #140503;
+    padding: 1rem 0;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 2rem auto;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    margin: 0 0.5rem;
+    font-weight: bolder;
+    font-size: 25px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #2e1913;
+  }
+
+  .inactive-button {
+    background-color: #b0aaa8;
+    color: white;
+    cursor: not-allowed;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .sub-heading {
+    color: yellowgreen;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .main-heading {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #00ff66;
+  }
+  
+  .description {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .team-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    /* overflow: hidden; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-card img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  .role {
+    color: green;
+    font-size: 30px;
+    margin: 4px 0 10px;
+  }
+  
+  .icons {
+    margin-top: 15px;
+    color:darkblue;
+  }
+  
+  .icons i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: darkgreen;
+    transition: color 0.3s;
+  }
+  
+  .icons i:hover {
+    color: #007f5f;
+  }
+
+  .text{
+    background-color: #fff;
+    max-width: 800px;
+    margin: 400px;
+    padding: 200px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .text h1{
+    font-size: 50px;
+    color: darkgreen;
+  }
+  .text h5{
+    font-size: 30px;
+    color: #000;
+  }
+  .section {
+    
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .section h2 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
+  }
+
+  .section p {
+    color: #ddd;
+    font-size: 1rem;
+  }
+
+  .stars {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    justify-content:space-evenly;
+    margin-top: 3rem;
+    padding: 100px 20px 300px 300px;
+  }
+
+  .card {
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    justify-content:space-evenly;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-text {
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .card-text h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #FFD700;
+  }
+
+  .card-text p {
+    margin-top: 0.5rem;
+    font-size: 20px;
+    color: #ccc;
+  }
+
+  .award-icon {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-top: 0.5rem;
+    animation: sparkle 2s infinite ease-in-out;
+  }
+
+  @keyframes sparkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.2); }
+  }
+  
+  .contact {
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 20px 20px 20px;
+    gap: 3rem;
+   border: 4px solid white;
+   line-height: 1.7;
+  }
+  
+  .details {
+    flex: 1;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .details a{
+    text-decoration: none;
+    color: greenyellow;
+  }
+  .contact-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-img img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  .split-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .left-box, .right-box {
+    flex: 1;
+    padding: 40px;
+    color: #fff;
+  }
+  
+  .left-box {
+    background-color: #bcb7b7;
+    color: #fff;
+  }
+  
+  .right-box {
+    background-color: #2f2e2e;
+  }
+  
+  .left-box h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  
+  
+  
+  /* --- Subscription Section --- */
+  .subscribe-section {
+    background-color: #000;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .subscribe-box {
+    display: inline-block;
+    background-color: #111;
+    border-radius: 30px;
+    padding: 20px 30px;
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.05),
+                0 0 40px 10px rgba(255, 255, 0, 0.4),
+                0 0 60px 15px rgba(128, 0, 128, 0.4);
+  }
+  
+  .subscribe-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .subscribe-form input[type="email"] {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  .subscribe-form button {
+    padding: 12px 24px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* --- Footer Section --- */
+  .footer {
+    font-weight: bold;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    gap: 40px;
+    justify-content: space-around;
+  }
+  
+  .footer-column {
+    max-width: 400px;
+  }
+  
+  .footer-title {
+    color:#00ff66;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column h4 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:#00ff66;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+   }
+  
+  .footer-column li {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color:lightblue;
+  }
+  .footer-column p {
+    /* margin-bottom: 8px; */
+    font-size: 20px;
+    color:lightblue;
+  }
+  .footer-column li a{
+    text-decoration: none;
+    color: lightblue;
+  }
+  /* Star container */
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  /* Individual star */
+  .star {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #ffe600;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 2s infinite ease-in-out;
+  }
+  
+  /* Randomized animation delays using nth-child */
+  .star:nth-child(2) { animation-delay: 0.1s; }
+  .star:nth-child(3) { animation-delay: 0.1s; }
+  .star:nth-child(4) { animation-delay: 0.2s; }
+  .star:nth-child(5) { animation-delay: 0.3s; }
+  .star:nth-child(6) { animation-delay: 0.2s; }
+  
+  /* Twinkle Animation */
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+  }
+  
+  /* Ensure award section allows stars to float around */
+  .section {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+  

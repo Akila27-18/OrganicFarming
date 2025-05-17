@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌾The Green Guide🌱</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+  <header class="navbar">
+    <div class="logo"><a href="index.html" style="text-decoration: none;color:white;">🌾The Green Guide🌱</a></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" class="active">HOME</a></li>
+        <li class="dropdown">
+          <a href="#">CROP GUIDE &#9662;</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="soilhealth.html">
+                <img src="Image/12 (31).png" alt="Soil Health">
+                Soil Health
+              </a>
+            </li>
+            <li>
+              <a href="pestcontrol.html">
+                <img src="Image/12 (32).png" alt="Pest Control">
+                Pest Control
+              </a>
+            </li>
+            <li>
+              <a href="chemical.html">
+                <img src="Image/12 (33).png" alt="Chemical Consequences">
+                Chemical Consequences
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        <li><a href="contact1.html">CONNECT</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const dropdowns = document.querySelectorAll('.dropdown');
+    
+        dropdowns.forEach(dropdown => {
+          dropdown.addEventListener('click', function (e) {
+            e.stopPropagation();
+            document.querySelectorAll('.dropdown').forEach(el => {
+              if (el !== dropdown) el.classList.remove('active');
+            });
+            dropdown.classList.toggle('active');
+          });
+        });
+    
+        // Close dropdown when clicking outside
+        window.addEventListener('click', () => {
+          document.querySelectorAll('.dropdown').forEach(el => el.classList.remove('active'));
+        });
+      });
+    </script>
+    
+  </header>
+  
+  
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1 class="grow-outline">GROW</h1>
+        <p class="green-text">Green</p>
+      <h1 class="grow-filled">GROW</h1>
+      <p class="clean-text">Clean</p>
+
+      <div class="tagline-button"><a href="index.html" style="text-decoration: none;color:white;">🌾The Green Guide🌱</a></div>
+      <p class="tagline">Welcome to The Green Guide<br>your trusted guide to growing naturally.<br>
+        Rooted in sustainability and inspired by nature.Our platform is dedicated in helping Gardeners, Farmers and Green - Thumbs of all levels, Embrace the work of all level farming.<br>
+        From Preparing healthy soil to harvesting chemical free - crops. We offer step by step guides , Eco Friendly tips and experts insight to help you cultivate crops with care.
+      From Preparing healthy soil to harvesting chemical free - crops. We offer step by step guides , Eco Friendly tips and experts insight to help you cultivate crops with care.</p>
+    </div>
+
+    <div class="hero-images">
+      <img src="Image/12 (12).png" alt="Farming Image 1">
+      <img src="Image/12 (42).png" alt="Farming Image 2">
+    </div>
+  </section>
+    <script>
+  const options = {
+    threshold: 0.5
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        obs.unobserve(entry.target); // Animate once
+      }
+    });
+  }, options);
+
+  const targets = document.querySelectorAll('.grow-outline, .grow-filled');
+  targets.forEach(el => observer.observe(el));
+</script>
+<section class="organic-section">
+    <div class="organic-content">
+      <h1>Your Journey to Organic Farming Starts Here</h1>
+      <h4>What is Organic Farming :</h4>
+      <p>
+        Organic farming is a way of growing crops and raising animals that works in harmony with nature —
+        without using synthetic chemicals, fertilizers, or genetically modified organisms (GMOs). Instead, it
+        focuses on natural methods to keep soil healthy, control pests, and support biodiversity.
+      </p>
+  
+      <div class="organic-buttons">
+        <button class="btn green">Healthy soil</button>
+        <button class="btn brown">Pest Control</button>
+        <button class="btn yellow">ECO - Friendly</button>
+      </div>
+    </div>
+</section>
+
+<section class="choose-us">
+    <div class="choose-left">
+      <h2>Why Choose us</h2>
+      <ul class="choose-list">
+        <li>
+          <img src="Image/12 (18).png" alt="Step icon" />
+          <span><h3>Easy step by step guidance</h3></span>
+        </li>
+        <li>
+          <img src="Image/12 (19).png" alt="Organic icon" />
+          <span><h3>100% organic and eco-conscious methods</h3></span>
+        </li>
+        <li>
+          <img src="Image/12 (20).png" alt="Tips icon" />
+          <span><h3>Community-driven tips and stories</h3></span>
+        </li>
+        <li>
+          <img src="Image/12 (21).png" alt="Science icon" />
+          <span><h3>Resources rooted in science and sustainability</h3></span>
+        </li>
+        <li>
+          <img src="Image/12 (22).png" alt="Nature icon" />
+          <span><h3>A deep love for nature and clean living</h3></span>
+        </li>
+      </ul>
+    </div>
+    <div class="choose-right">
+      <img src="Image/12 (28).png" alt="Farmers in the field" />
+    </div>
+  </section>
+  <section class="future">
+    <div class="future-left">
+        <img src="Image/12 (29).png" alt="Paddy in the field"/>
+    </div>
+    <div class="future-right">
+        <h1>Embrace the Future of Organic Farming</h1>
+        <p>
+            Discover the organic power of organic farming and its benefit for both your health and the planet. Join us on a journey to sustainable agriculture and thriving ecosystems.
+        </p>
+        <div class="future-btn">
+            <span><button>Learn More</button> 
+            <button>Get Started</button></span>
+        </div>
+    </div>
+  </section>   
+  <section class="faq-section">
+ 
+    <h1>FAQs</h1>
+    <p class="subtitle">Discover the answers to your most pressing questions about organic farming practices and benefits.</p>
+
+    <div class="faq-card fade-in">
+      <h2>What is organic farming?</h2>
+      <p>Organic farming is an agricultural method that emphasizes natural processes and sustainability. It avoids synthetic fertilizers and pesticides, focusing instead on crop rotation, composting, and biological pest control. This approach not only nurtures the soil but also promotes biodiversity.</p>
+    </div>
+
+    <div class="faq-card fade-in">
+      <h2>What are the benefits?</h2>
+      <p>Organic farming enhances soil health, leading to better crop yields over time. It also reduces chemical runoff, protecting nearby water sources and ecosystems. Additionally, organic products are often perceived as healthier and more environmentally friendly by consumers.</p>
+    </div>
+
+    <div class="faq-card fade-in">
+      <h2>Is it more expensive?</h2>
+      <p>While organic products can be pricier due to more labor-intensive practices, many consumers are willing to pay a premium for quality. The long-term environmental benefits and health advantages can outweigh initial costs. Additionally, local organic farms often offer competitive pricing.</p>
+    </div>
+
+    <div class="faq-card fade-in">
+      <h2>How can I start?</h2>
+      <p>Starting with organic farming requires research and planning. Begin by assessing your land and choosing suitable crops that thrive in your climate. Consider joining local organic farming groups for support and resources.</p>
+    </div>
+
+    <div class="faq-card fade-in">
+      <h2>What about pest control?</h2>
+      <p>Organic pest control relies on natural methods such as beneficial insects, crop rotation, and organic pesticides. These techniques help manage pests without harming the environment. Educating yourself on pest identification and management is crucial for success.</p>
+    </div>
+
+    <div class="footer-contact fade-in">
+      <h2>Still have questions?</h2>
+      <p>We're here to help you with your inquiries!</p>
+      <button>Contact</button>
+    </div>
+    <img src="Image/12 (2).png" class="falling-leaf" style="left: 10%; animation-delay: 0s;">
+    <img src="Image/12 (24).png" class="falling-leaf" style="left: 20%; animation-delay: 2s;">
+    <img src="Image/12 (2).png" class="falling-leaf" style="left: 30%; animation-delay: 4s;">
+    <img src="Image/12 (2).png" class="falling-leaf" style="left: 40%; animation-delay: 0s;">
+    <img src="Image/12 (24).png" class="falling-leaf" style="left: 50%; animation-delay: 2s;">
+    <img src="Image/12 (2).png" class="falling-leaf" style="left: 60%; animation-delay: 4s;">
+    <img src="Image/12 (2).png" class="falling-leaf" style="left: 70%; animation-delay: 0s;">
+    <img src="Image/12 (24).png" class="falling-leaf" style="left: 80%; animation-delay: 2s;">
+    <img src="Image/12 (2).png" class="falling-leaf" style="left: 90%; animation-delay: 4s;">
+  </section>
+  <script>
+    
+document.addEventListener('DOMContentLoaded', () => {
+  const faders = document.querySelectorAll('.fade-in');
+  const fadeInObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('appear');
+        fadeInObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  faders.forEach(fader => fadeInObserver.observe(fader));
+});
+
+  </script>
+<section class="services-section">
+  <img src="Image/12 (23).png" alt="Leaf Decoration Left" class="leaf left">
+  <img src="Image/12 (24).png" alt="Leaf Decoration Right" class="leaf right">
+
+  <div class="content-center">
+    <h1>Discover the Service we provide<br>and Benefits</h1>
+    <p class="description">
+      Organic farming enhances soil health and promotes biodiversity. By utilizing natural methods, 
+      farmers can produce healthier crops while protecting the environment.
+    </p>
+  </div>
+  <div class="service-cards">
+    <div class="card">
+      <div class="image-container">
+        <img src="Image/12 (10).png" alt="Soil Management">
+        <div class="overlay">
+          <p>Improve soil fertility and reduce erosion with organic techniques.</p>
+        </div>
+      </div>
+      <h3>Effective Soil Management<br>Techniques</h3>
+    </div>
+  
+    <div class="card">
+      <div class="image-container">
+        <img src="Image/12 (11).png" alt="Pest Control">
+        <div class="overlay">
+          <p>Organic pest control methods reduce chemical exposure.</p>
+        </div>
+      </div>
+      <h3>Natural Pest Control<br>Strategies</h3>
+    </div>
+  
+    <div class="card">
+      <div class="image-container">
+        <img src="Image/12 (30).png" alt="Crop Rotation">
+        <div class="overlay">
+          <p>Crop rotation prevents pests and improves soil structure.</p>
+        </div>
+      </div>
+      <h3>The Importance of Crop<br>Rotation</h3>
+    </div>
+  </div>
+<section class = contact>
+  <div class="details">
+    <h2 style="color: darkgreen;">Get in Touch</h2>
+    <h4 style="color: goldenrod;">We are Here to Assist you with any Queries....</h4>
+      <br>
+          <h5 style="color:darkolivegreen; font-weight: bolder; font-size: larger;">Email:</h5>
+          <p style="color:blueviolet; font-weight: bolder; font-size: larger;"><a href="mailto:greenguide@gmail.com">greenguide@gmail.com</a></p>
+       <br>
+     
+          <h5 style="color:darkolivegreen; font-weight: bolder; font-size: larger;">Phone</h5>
+          <p  style="color:blueviolet; font-weight: bolder; font-size: larger;">9874563210</p>
+        <br>
+       
+          <h5 style="color:darkolivegreen; font-weight: bolder; font-size: larger;">Office</h5>
+          <p style="color:darkblue; font-weight: bolder; font-size: larger;">123 Chennai, Tamil Nadu, INDIA</p>
+  </div>
+  <div class="contact-img">
+    <img src="Image/12 (26).png">
+  </div>
+</section>
+<section class="split-section">
+  <div class="left-box">
+    <h2>
+      Empowering sustainable agriculture through knowledge,<br>
+      innovation, and community engagement.
+    </h2>
+    <button class="btn dark">Learn More</button>
+  </div>
+  <div class="right-box">
+    <p>
+      At our core, we believe in the power of organic farming to transform lives and landscapes. 
+      Our mission is to provide comprehensive resources that inspire and educate farmers and 
+      enthusiasts alike. With a rich history in the organic farming movement, we are dedicated 
+      to promoting sustainable practices that nourish both the earth and its people.
+    </p>
+    <button class="btn light">Get Started</button>
+  </div>
+</section>
+
+<!-- Subscription Section -->
+<section class="subscribe-section">
+  <div class="subscribe-box">
+    <p class="subscribe-text">Keep your Green natural and Fresh</p>
+    <div class="subscribe-form">
+      <input type="email" placeholder="@Email">
+      <button>Subscribe</button>
+    </div>
+  </div>
+</section>
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-column">
+    <h3 class="footer-title"><a href="index.html" style="text-decoration: none;color:white;">🌾The Green Guide🌱</a></h3>
+    <p>
+      We focus on building healthy soil, protecting biodiversity, and producing fresh, nutrient-rich food 
+      that’s good for people and the planet. Whether you're here to learn, shop, or connect with like-minded 
+      growers, our goal is to inspire a lifestyle that honors the earth.
+    </p>
+  </div>
+
+  <div class="footer-column">
+    <h4>CATAGORY</h4>
+    <ul>
+      <li><a href="soilhealth.html">Soil Health</a></li>
+      <li><a href="pestcontrol.html">Pest Control</a></li>
+      <li><a href="chemical.html">Chemical Consequences</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h4>CONTACT</h4>
+    <ul>
+      <li>Environmentalists</li>
+      <li>Local Farmers</li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
