@@ -14,7 +14,6 @@ nav {
     border-radius: 20px;
     width: fit-content;
     margin: 2rem auto;
-    position: fixed;
   }
 
   nav a {
@@ -98,118 +97,7 @@ nav {
     line-height: 1.5;
   }
   
-  .contact-section {
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-  }
   
-  .form-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    width: 100%;
-    gap: 40px;
-    background-color: #000;
-    color: #00ff66;
-    padding: 50px;
-    margin: 20px;
-  }
-  
-  .form-text {
-    font-size: 25px;
-    flex: 1 1 50%;
-    min-width: 300px;
-  }
-  
-  .form-text h5 {
-    font-size: 25px;
-    margin: 0;
-    font-weight: 600;
-  }
-  
-  .form-text h1 {
-    font-size: 50px;
-    margin: 10px 0;
-  }
-  
-  .form-text p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #555;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .name-fields {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .name-fields div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  input, select, textarea {
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 20px;
-  }
-  
-  .phone-input {
-    display: flex;
-    gap: 8px;
-  }
-  
-  .phone-input select {
-    padding: 10px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  .checkbox {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-  }
-  
-  .checkbox a {
-    color: #000;
-    text-decoration: underline;
-  }
-  
-  button {
-    padding: 12px;
-    background-color:yellowgreen;
-    color: black;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .form-images {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px;
-    flex: 1 1 40%;
-  }
-  
-  .form-images img {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-  }
   
   /* --- Subscription Section --- */
   .subscribe-section {
@@ -306,3 +194,96 @@ nav {
     text-decoration: none;
     color: lightblue;
   }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    padding: 2rem;
+  }
+  
+  .guidance-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  
+  .card {
+    width: 90%;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .soil-guidance {
+    background-color: #3a8730;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .pest-guidance {
+    display: flex;
+    flex-direction: row;
+    background-color: #4a290c;
+    color: white;
+  }
+  
+  .pest-guidance .text {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .pest-guidance .text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pest-guidance .text p {
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  
+  .pest-guidance .guide-link {
+    color: #fff;
+    background-color: #6b3e14;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pest-guidance .guide-link:hover {
+    background-color: #935d27;
+  }
+  
+  .pest-guidance .image img {
+    height: 100%;
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+    border-left: 4px solid #935d27;
+  }
+  

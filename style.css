@@ -12,20 +12,22 @@ body {
 
 /* Navbar */
 .navbar {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 2;
 }
 
 .logo {
-  font-size: 20px;
+  padding: 10px;
+  font-size: 25px;
   font-weight: bolder;
+  background-color: darkgreen;
 }
 
 .nav-links {
@@ -37,7 +39,8 @@ body {
 .nav-links li a {
   text-decoration: none;
   color: white;
-  font-weight: 500;
+  background-color: #2f7b36;
+  font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   transition: background 0.3s;

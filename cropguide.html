@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact1.css" />
-
+    <link rel="stylesheet" href="crop.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet">
 
-    <title>Contact</title>
+    <title>Soil Health</title>
     
 </head>
 <body>
@@ -20,7 +19,7 @@
         });
       </script>
     <section class="hero">
-        <img src="Image/12 (40).png" width="100%">
+        <img src="Image/12 (45).png" width="100%">
     </section>
     <nav>
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -29,59 +28,41 @@
         <a href="#" class="inactive-button">Crop guide</a>
         <a href="#">Contact</a>
       </nav>
+      <section class="guidance-section">
+        <div class="card soil-guidance animate">
+          <h2>SOIL HEALTH GUIDANCE</h2>
+        </div>
     
-      <section class="contact-section">
-        <div class="form-container">
-          <div class="form-text">
-            <h5>Contact us</h5>
-            <h1>Get in touch</h1>
-            <p>We’d love to hear from you. Please fill out this form.</p>
-            <form>
-              <div class="name-fields">
-                <div>
-                  <label>First name</label>
-                  <input type="text" placeholder="MUKESH" required>
-                </div>
-                <div>
-                  <label>Last name</label>
-                  <input type="text" placeholder="KANNAN" required>
-                </div>
-              </div>
-    
-              <label>Email</label>
-              <input type="email" placeholder="XYZ@GMAIL.COM" required>
-    
-              <label>Phone number</label>
-              <div class="phone-input">
-                <select>
-                  <option value="IN">IN</option>
-                  <!-- Add more countries if needed -->
-                </select>
-                <input type="text" placeholder="789654123" required>
-              </div>
-    
-              <label>Message</label>
-              <textarea placeholder="I NEED SOME GUIDENCE" rows="4" required></textarea>
-    
-              <div class="checkbox">
-                <input type="checkbox" required>
-                <span>You agree to our friendly <a href="#">privacy policy</a></span>
-              </div>
-    
-              <button type="submit"><a href="contact2.html">Send message</a></button>
-            </form>
+        <div class="card pest-guidance animate">
+          <div class="text">
+            <h2>PEST CONTROL GUIDANCE</h2>
+            <p>
+              Protect Your Plants, Naturally<br>
+              Say goodbye to chemicals and hello to balance.<br>
+              Our Pest Control Guide teaches you how to manage unwanted visitors in the garden using safe, organic methods that protect your crops — and the planet.
+            </p>
+            <a href="#" class="guide-link">PRESS FOR GUIDE</a>
           </div>
-    
-          <div class="form-images">
-            <img src="Image/12 (35).png" alt="Field 1">
-            <img src="Image/12 (38).png" alt="Flower">
-            <img src="Image/12 (30).png" alt="Wheat" >
-            <img src="Image/12 (37).png" alt="Farmers Feed">
-            <img src="Image/12 (39).png" alt="Greenhouse">
-            <img src="Image/12 (29).png" alt="Greenhouse">
+          <div class="image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Chrysomelidae_-_Chrysolina_fastuosa.JPG/320px-Chrysomelidae_-_Chrysolina_fastuosa.JPG" alt="Pest Control Beetle">
           </div>
         </div>
       </section>
+    
+      <script>
+        // Fade-in on scroll using IntersectionObserver
+            const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                }
+            });
+            });
+
+            document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+
+      </script>
+     
        
       <section class = contact>
         <div class="details">
